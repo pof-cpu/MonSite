@@ -14,57 +14,85 @@ body{
 /* NAV BAR */
 /* ************************************* */
 nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    /* align-items: Left; */
+    /* min-height: 8vh; */
     font-family: 'Poppins', sans-serif;
     background-color:#5d4954 ;
+}
+h4.bar-nav {
+    margin-left: 6px;
+  
+    /* align-content: center; */
 }
 .logo{
     color: rgb(230, 220, 220);
     text-transform:uppercase;
     letter-spacing: 5px;
     font-size: 20px;
-    flex: 1;
-    /* border: solid; */
-    text-align: center;
+    border:teal solid;
+    /* flex: 1; */
+     
+    /* text-align: left; */
 }
-.nav-links{
+ul.nav-link{
     display:flex;
     flex-wrap: wrap;
     font-size: medium;
     /* background-color: red; */
     justify-content: space-around;
-    width:40%;
-    flex:1.5;
-    /* border: solid; */
+    /* width:40%; */
+    /* flex:1.5; */
+    margin:0; 
 }
-.nav-links li{
-list-style: none;
+ul.nav-link li{
+    list-style: none;
+    margin:0;
 }
-.nav-links a{
+/* ul.nav a{
     color: rgb(230, 220, 220);
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
  
-}
-.burger{
+} */
+/*.burger{
     display:none;
     cursor:pointer;
-    border: solid;
-}
-.burger div{
+} 
+*/
+
+/* .burger div{
     width: 20px;
     height: 3px;
     background-color:rgb(230, 220, 220);
     margin:4px;
-    border: tan solid .1em;
-    
+} */
 
+
+
+@media screen and (max-width:700px){
+    /* ********************** */
+    /* NAV BAR */
+    /* /********************* */
+    /* .nav-links{
+        position: absolute;
+        right: 0px;
+        height:92vh;
+        top:8vh;
+        background-color:#5d4954 ;
+    } */
+    /* .nav-links li{
+        position:absolute;
+        opacity:0;
+        transform:translateX(100%);
+    }
+    .burger{
+        display: block;
+    } */
 }
-
 
 
 /* ************************ */
@@ -242,34 +270,12 @@ h1.titre{
   h4{
     /* font-size: .96em; */
   }
-  @media screen and (max-width:700px){
-        /* ********************** */
-        /* NAV BAR */
-        /* /********************* */
-        /* .nav-links{
-            position: absolute;
-            right: 0px;
-            height:92vh;
-            top:8vh;
-            background-color:#5d4954 ;
-        } */
-        .nav-links li{
-            position:absolute;
-            opacity:0;
-            transform:translateX(100%);
-        }
-        .burger{
-            display: block;
-        }
-    }
-  @media screen and (max-width:1200px) {
+  
+
+
+@media screen and (max-width:1200px) {
     .doc {   
-        flex-direction: column;  
-        /* display: flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
-        align-content: stretch;    */
-        
+        flex-direction: column;         
     }
     .encolonne{
         columns: count 1;
