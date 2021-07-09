@@ -1,15 +1,70 @@
  <!DOCTYPE html>
- <html>
+ <html lang="fr">
     <head>
-        <meta charset="utf-8" />
-		    <meta name="viewport" content="width=device-width"/>
-        <!--<link rel="stylesheet" href="style.css" /> -->
-        <title>Mon site</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width"/>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" media="screen" href="../prism-default.css" />
+      <!-- Google font caveat -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Google font poppins -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+      <!-- Math Jax -->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <!-- Prism -->
+      <script src="../prism.js"></script>
+      <script type="text/javascript">
+          // Optional
+          Prism.plugins.NormalizeWhitespace.setDefaults({
+              'remove-trailing': true,
+              'remove-indent': true,
+              'left-trim': true,
+              'right-trim': true,
+              'tabs-to-spaces': 1,
+              'spaces-to-tabs': 4,
+              'indent': 0,
+          });
+          </script>
+
+
+      <title>Mon site</title>
   
     </head>
 	
 
 <body>
+  <nav>
+    <div class="logo">
+        <h4>
+            The Nav
+        </h4>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="#" class="">Home</a>
+        </li>
+        <li>
+            <a href="#" class="">About</a>
+        </li>                  
+        <li>
+            <a href="#" class="">Works</a>
+        </li>
+        <li>
+            <a href="#" class="">Project</a>
+        </li>
+    </ul> 
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>               
+</nav>
 
  <!-- <div  style="padding:20px;margin-top:0px;height:50px;"> 
     </div>-->
