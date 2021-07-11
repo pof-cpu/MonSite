@@ -1,6 +1,6 @@
-// let today = new Date()
+let today = new Date()
 
-let today = new Date(2021,3,10);
+// let today = new Date(2021,11,10);
 let aujourdhui = new Date()
 
 // Jours fériés 2021
@@ -147,36 +147,50 @@ for(var i = 0; i< d.length;i++){
     //mois précédent
     if (jour<1){   
         contenu=djp+jour;
-        d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";
+        // d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";
+        d[i].innerHTML="<div class=\"autremois\">" + contenu + "</div>";
     
     }
     //mois en cours
     //--------------
     if(0<jour && jour<(dj+1)){
-        //Si c'est aujourd'hui
-        //--------------
-        if (aujourdhui.getTime()==today.getTime()) {
-            if (jour==today.getDate()){
-            d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-            }else {
-        }
+        
         //Si c'est un jour férié
         // ---------------------
-    }else{
-        // found=joursferies2021[mm].find(element=> element == jour);
-        found=jourferieannee[2021][today.getMonth()].includes(jour);
-                
+        found=jourferieannee[2021][today.getMonth()].includes(jour);    
         if (found ==true){
             d[i].innerHTML="<div style=\"color:red\">" + jour + "</div>";
         }else{
-            d[i].innerHTML=jour;
+            //Si c'est aujourd'hui
+            //--------------
+            if (memedate(aujourdhui,today)==true){
+                if(jour==today.getUTCDate()){
+                    d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
+                }else{
+                d[i].innerHTML=jour;
+                }
+            }
         }
-    }
+
+
+        //Si c'est aujourd'hui
+        //--------------
+        // if (memedate(aujourdhui,today)==true) {
+        //     if (jour==today.getDate()){
+        //     d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
+        //     }else {
+        // }
+
+    
+        // found=joursferies2021[mm].find(element=> element == jour);
+       
+    
     }
     //mois suivant
     if (jour> dj){
         contenu=jour-dj;
-        d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";  
+        // d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";  
+        d[i].innerHTML="<div class=\"autremois\">" + contenu + "</div>";  
     }
 }
 

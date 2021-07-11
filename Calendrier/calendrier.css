@@ -34,7 +34,7 @@ body{
     width:35px;
     margin: 1px;
     font-size: medium;
-    border: #e0c3d6 solid 1px;
+    /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     background-color: honeydew;
     text-align: center;
@@ -43,11 +43,11 @@ body{
     margin: 1px;
     width:35px;
     font-size: medium;
-    border: #e0c3d6 solid 1px;
+    /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
     
 }
-.test{
-    color:#0011ff83;
+.autremois{
+    color:#a4a6c5b0;
 }
