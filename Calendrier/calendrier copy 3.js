@@ -126,22 +126,40 @@ for(var i = 0; i< d.length;i++){
     //mois en cours
     if(0<jour && jour<(dj+1)){
         //aujourd'hui
-        if (aujourdhui.getTime()==today.getTime()){
-            if (jour==today.getDate()){
-            d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-            }else {
-            // d[i].innerHTML=jour;
-        }
-    }else{
-        //jour férié
-        for(var j = 0; j< joursferies[mm].length;j++){
-            if (jour==joursferies[mm][j]){
-                d[i].innerHTML="<span style=\"color:red\">" + jour + "</span>";
-            }else{
-                d[i].innerHTML=jour;
+        for(var j = 0; j< joursferies[mm].length;j++){ 
+            switch (jour){
+                case today.getDate() :
+                    if (aujourdhui.getTime()==today.getTime()){
+                        d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
+                        
+                    }
+                   
+                 case joursferies[mm][j] :
+                    d[i].innerHTML="<div style=\"color:red\">" + jour + "</div>";
+                    break;
+                default:
+                    // d[i].innerHTML=jour; 
             }
         }
-    }
+
+
+
+    //     if (aujourdhui.getTime()==today.getTime()){
+    //         if (jour==today.getDate()){
+    //         d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
+    //         }else {
+    //         // d[i].innerHTML=jour;
+    //     }
+    // }else{
+    //     //jour férié
+    //     for(var j = 0; j< joursferies[mm].length;j++){
+    //         if (jour==joursferies[mm][j]){
+    //             d[i].innerHTML="<span style=\"color:red\">" + jour + "</span>";
+    //         }else{
+    //             d[i].innerHTML=jour;
+    //         }
+    //     }
+    // }
 
     }
     //mois suivant
@@ -153,4 +171,6 @@ for(var i = 0; i< d.length;i++){
 }
 
  console.log(datelocale);
+ console.log(joursferies[mm]);
+ console.log(today.getDate());
  

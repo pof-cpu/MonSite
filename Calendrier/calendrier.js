@@ -65,19 +65,21 @@ function dernierjourmoisprecedant(mydate){
     return new Date(mydate.getFullYear(), mydate.getMonth(),0).getDate();
 }
 
-// Jours fériés de Avril
-const joursferies=[
+// Jours fériés 2021
+const joursferies2021=[
 
-    [0,0,0,0,0],
-    [0,0,0,0,0],
-    [0,0,0,0,0],
-    [2,4,5,0,0],
-    [1,8,13,23,24],
-    [0,0,0,0,0],
-    [0,0,0,0,0],
-    [0,0,0,0,0],
-    [0,0,0,0,0],
-    [0,0,0,0,0]
+    [0,0,0,0,0], //janvier
+    [0,0,0,0,0], //février
+    [0,0,0,0,0], //mars
+    [2,4,5,0,0], //avril
+    [1,8,13,23,24], //mai
+    [0,0,0,0,0], //juin
+    [0,0,0,0,0], //juillet
+    [0,0,0,0,0], //aout
+    [0,0,0,0,0], //sep
+    [0,0,0,0,0],  //oct
+    [,,,,], //nov 
+    [,,,,], //dec 
 
 ]
 
@@ -100,6 +102,12 @@ let contenu =0;
 // let pdj = precdernierjour(today);
 let saut=0;
 
+let found=false;
+// console.log('found :'+found)
+
+
+
+
 console.log('Mois en cours ' + texte_mois(today));
 console.log('premier jour ' + pj);
 console.log('dernier jour ' + dj);
@@ -120,57 +128,40 @@ for(var i = 0; i< d.length;i++){
     //mois précédent
     if (jour<1){   
         contenu=djp+jour;
-        d[i].innerHTML="<span style=\"color:gray\">" + contenu + "</span>";
+        d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";
     
     }
     //mois en cours
+    //--------------
     if(0<jour && jour<(dj+1)){
-        //aujourd'hui
-        for(var j = 0; j< joursferies[mm].length;j++){ 
-            switch (jour){
-                case today.getDate() :
-                    if (aujourdhui.getTime()==today.getTime()){
-                        d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-                        
-                    }
-                   
-                 case joursferies[mm][j] :
-                    d[i].innerHTML="<div style=\"color:red\">" + jour + "</div>";
-                    break;
-                default:
-                    // d[i].innerHTML=jour; 
-            }
+        //Si c'est aujourd'hui
+        //--------------
+        if (aujourdhui.getTime()==today.getTime()) {
+            if (jour==today.getDate()){
+            d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
+            }else {
         }
-
-
-
-    //     if (aujourdhui.getTime()==today.getTime()){
-    //         if (jour==today.getDate()){
-    //         d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-    //         }else {
-    //         // d[i].innerHTML=jour;
-    //     }
-    // }else{
-    //     //jour férié
-    //     for(var j = 0; j< joursferies[mm].length;j++){
-    //         if (jour==joursferies[mm][j]){
-    //             d[i].innerHTML="<span style=\"color:red\">" + jour + "</span>";
-    //         }else{
-    //             d[i].innerHTML=jour;
-    //         }
-    //     }
-    // }
-
+        //Si c'est un jour férié
+    }else{
+        // found=joursferies2021[mm].find(element=> element == jour);
+        found=joursferies2021[mm].includes(jour);
+                
+        if (found ==true){
+            console.log('found : ' + found);
+            d[i].innerHTML="<div style=\"color:red\">" + jour + "</div>";
+        }else{
+            d[i].innerHTML=jour;
+        }
+    }
     }
     //mois suivant
     if (jour> dj){
         contenu=jour-dj;
-        d[i].innerHTML="<span style=\"color:gray\">" + contenu + "</span>";
-        
+        d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";  
     }
 }
 
  console.log(datelocale);
- console.log(joursferies[mm]);
+ console.log(joursferies2021[mm]);
  console.log(today.getDate());
  
