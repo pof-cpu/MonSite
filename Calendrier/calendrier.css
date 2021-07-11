@@ -1,0 +1,40 @@
+/* *{margin:0; */
+/* padding: 0; */
+*{box-sizing: border-box;}
+body{
+    font-family:'Trebuchet MS';
+}
+
+.calendrier{
+    margin-left: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:249px;
+    
+    
+    /* flex-direction: column; */
+}
+
+.année{
+    font-size: x-large;
+}
+.mois{
+    font-size: larger;
+}
+.jour-lettre{
+    width:35px;
+    font-size: medium;
+    border: mediumvioletred solid 1px;
+    outline: mediumvioletred solid 1px;
+
+    text-align: center;
+}
+.jour{
+    
+    width:35px;
+    font-size: medium;
+    border: mediumvioletred solid 1px;
+    outline: mediumvioletred solid 1px;
+    text-align: center;
+    
+}

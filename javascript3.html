@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript2</title>
+    </head>
+    <body>
+        <h1 id="gros_titre">Entraînement au javascript</h1>
+        <div>
+            <p class="para" >Cliquez moi</p>
+            <p class="para">1er para</p>
+           
+            
+        </div>
+        <button id="bouton1">OK</button>
+        <p>La réponse est : <span id="reponse"></span></p>
+        
+        <script>
+            let p1 = document.querySelector('p');
+            texte = ' ';
+
+            p1.onclick = function(){
+                this.innerHTML = '<b>Bravo ! </b>';
+                this.style.color = 'orange'; 
+                texte ='OK';
+                
+                with(document.getElementById('reponse')){
+                    innerHTML+=texte;
+                    style.border='0.1em solid black';
+                    style.borderRadius='3px';
+                    style.color='red';
+            }
+            
+
+            }
+            // document.getElementById('reponse').style.borderRadius='3px';
+            // document.getElementById('reponse').style.color='red';
+
+            // document.getElementById('reponse').innerHTML+=texte;
+                      
+        </script>
+          
+    </body>
+</html>

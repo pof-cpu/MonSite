@@ -1,0 +1,72 @@
+/* 09/07/2021 */
+
+body{
+    margin:0px;
+}
+
+
+
+nav{
+    margin:0;
+
+}
+
+.nav-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-family: 'Poppins', sans-serif;
+    background-color:#5d4954 ;
+}
+
+h4.bar-nav{
+    margin:0;
+    color: rgb(228, 228, 228);
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-size: large;
+}
+
+.burger{
+    cursor: pointer;
+}
+.burger div{
+    width: 20px;
+    height: 3px;
+    background-color:rgb(230, 220, 220);
+    margin:4px;
+    
+    /* border:solid; */
+}
+ .bandeau{
+     margin-left: 8px;;
+ }
+
+ div.nav-link{
+    display: flex;
+    flex-direction: column; 
+    margin-top:0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    background-color:#5d4954 ;
+   
+    /* transform: translateY(-100%); */
+    /* display: none; */
+ }
+ div.nav-link div{
+     margin-left: 18px;
+     margin-top: 10px;
+ }
+ div.nav-link a{
+    color: rgb(230, 220, 220);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+ }
+div.nav-active{
+    transform:translateY(0%);
+    transition-duration: .5s;
+    display: contents;
+}
+
