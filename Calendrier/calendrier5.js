@@ -4,7 +4,6 @@ let today = new Date()
 let aujourdhui = new Date()
 let mois01 = new Date(2021,0,1);
 
-// today = mois01;
 
 // Jours fériés 2021
 const joursferies2021=[
@@ -166,14 +165,13 @@ for(var i = 0; i< d.length;i++){
         }else{
             //Si c'est aujourd'hui
             //--------------
-           
+            if (memedate(aujourdhui,today)==true){
                 if(jour==today.getUTCDate()){
-                    if (memedate(aujourdhui,today)==true){
-                        d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-                    }
+                    d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
                 }else{
                 d[i].innerHTML=jour;
-                } 
+                }
+            }
         }
 
 
