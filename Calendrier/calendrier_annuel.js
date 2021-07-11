@@ -4,7 +4,7 @@ let today = new Date()
 let aujourdhui = new Date()
 let mois01 = new Date(2021,0,1);
 
-// today = mois01;
+today = mois01;
 
 // Jours fériés 2021
 const joursferies2021=[
