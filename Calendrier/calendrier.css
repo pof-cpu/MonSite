@@ -9,7 +9,8 @@ body{
     margin-left: 10px;
     display: inline-flex;
     flex-wrap: wrap;
-    width:249px;
+    width:264px;
+    border:rgb(129, 129, 216) solid 2px;
     
     
     /* flex-direction: column; */
@@ -20,21 +21,33 @@ body{
 }
 .mois{
     font-size: larger;
+    width:100%;
+    margin: 1px;
+    text-align: center;
+    font-weight: bold;
+    /* border:solid; */
+    background-color:rgb(201, 73, 179);
+    color:rgb(255, 255, 255);
+    text-transform: capitalize;
 }
 .jour-lettre{
     width:35px;
+    margin: 1px;
     font-size: medium;
-    border: mediumvioletred solid 1px;
-    outline: mediumvioletred solid 1px;
-
+    border: #e0c3d6 solid 1px;
+    /* outline: mediumvioletred solid 1px; */
+    background-color: honeydew;
     text-align: center;
 }
 .jour{
-    
+    margin: 1px;
     width:35px;
     font-size: medium;
-    border: mediumvioletred solid 1px;
-    outline: mediumvioletred solid 1px;
+    border: #e0c3d6 solid 1px;
+    /* outline: mediumvioletred solid 1px; */
     text-align: center;
     
+}
+.test{
+    color:#0011ff83;
 }
