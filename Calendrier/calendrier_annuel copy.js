@@ -1,9 +1,10 @@
 
+
 function calendrier(today){
     let aujourdhui = new Date()
-    let mois = today.getMonth();
     
     // Jours fériés 2021
+    // **********************************
     const joursferies2021=[
         [1], //janvier
         [], //février
@@ -35,6 +36,25 @@ function calendrier(today){
     const jourferieannee= new Array();
     jourferieannee[2021] = joursferies2021;
     jourferieannee[2022] = joursferies2022;
+    // ************************************************* 
+    // Vacances 2021
+    // *************************************************
+    const vacances2021=[
+        [1,2,3,4,5,6,7,8,9,10],  //jan
+        [22,23,24,25,26,27,26], //fev
+        [], //mar
+        [6,7,8,9,10,11,12,13,14,15,16,17,18],  //avr
+        [],  //mai
+        [],  //juin
+        [3,4,5,6,7,8,9,10,11,12,13,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31],  //juil
+        [1,2,3,4,5,6,7,8],  //aout
+        [13,14,15,16,17,18,19],  //sept
+        [25,26,27,28,29,30,31],  //oct
+        [2,3,4,5,6,7], //nov
+        [13,14,15,16,17,18,19,20,21,22,23,24,26,27,28,29,30,31], //décembre
+    ]
+
+
 
     // console.log('jour férié ' + jourferieannee[2022][10][0]);
     // console.log('jour férié ' + joursferies2022[4][2]);
@@ -57,15 +77,9 @@ function calendrier(today){
         }else{return false;}
     }
     //**************************************
-    console.log(' mêmes dates ? ' +  memedate(aujourdhui,today));
+    // console.log(' mêmes dates ? ' +  memedate(aujourdhui,today));
 
-    let datelocale = today.toLocaleDateString('fr-FR');
-    let datelocalelongue = today.toLocaleDateString('fr-FR',{
-        weekday:'long',
-        year : 'numeric',
-        month:'long',
-        day: 'numeric'
-    });
+  
 
     //**************************************** */
     // retourne le mois en texte
@@ -101,13 +115,16 @@ function calendrier(today){
     }
     //*********************************************** */
 
-
+    let mois = texte_mois(today);
+    console.log(mois);
 
     // Remplissage du calendrier
     //----------------------------------------
-    document.getElementById('mois').innerHTML=texte_mois(today) +' '+ today.getFullYear();
+    // document.getElementById('mois').innerHTML=texte_mois(today) +' '+ today.getFullYear();
+    document.querySelector('.mois.'+mois).innerHTML=texte_mois(today) +' '+ today.getFullYear();
 
-    let d = document.querySelectorAll( ".jour");
+
+    let d = document.querySelectorAll('.jour.'+mois);
     let jour = 0;
     let pj = premierjour(today);
     let dj = dernierjour(today);
@@ -117,15 +134,8 @@ function calendrier(today){
     let saut=0;
 
     let found=false;
+    let foundvac=false;
     // console.log('found :'+found)
-
-
-
-
-    console.log('Mois en cours ' + texte_mois(today));
-    console.log('premier jour ' + pj);
-    console.log('dernier jour ' + dj);
-    console.log('dernier mois précédent ' + djp);
 
     jour = 2-premierjour(today)
     // console.log('jour '+jour);
@@ -137,9 +147,10 @@ function calendrier(today){
     
 
     for(var i = 0; i< d.length;i++){
-        jour=i-premierjour(today)+2+saut;
+        jour=i-pj+2+saut;
 
         //mois précédent
+        //---------------
         if (jour<1){   
             contenu=djp+jour;
             // d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";
@@ -149,53 +160,54 @@ function calendrier(today){
         //mois en cours
         //--------------
         if(0<jour && jour<(dj+1)){
+            // si c'eest les vacances
+            foundvac=vacances2021[today.getMonth()].includes(jour);
+            if (foundvac==true){
+                d[i].innerHTML="<div class=\"vacances\">0</div>";
+            }
             
             //Si c'est un jour férié
             // ---------------------
             found=jourferieannee[2021][today.getMonth()].includes(jour);    
             if (found ==true){
-                d[i].innerHTML="<div style=\"color:red\">" + jour + "</div>";
+                if(jour==today.getDate()&& memedate(aujourdhui,today)==true){
+                    d[i].innerHTML="<div class=\"ferie today\">" + jour + "</div>";
+                }else{
+                d[i].innerHTML="<div class=\"ferie\">" + jour + "</div>"; }
             }else{
                 //Si c'est aujourd'hui
-                //--------------
-            
-                    if(jour==today.getDate()){
-                        if (memedate(aujourdhui,today)==true){
-                            d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-                        }
-                    }else{
-                    d[i].innerHTML=jour;
-                    } 
-            }
-
-
-            //Si c'est aujourd'hui
-            //--------------
-            // if (memedate(aujourdhui,today)==true) {
-            //     if (jour==today.getDate()){
-            //     d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
-            //     }else {
-            // }
-
-        
-            // found=joursferies2021[mm].find(element=> element == jour);
-        
-        
+                //-------------------
+                if(jour==today.getDate()&& memedate(aujourdhui,today)==true){
+                    d[i].innerHTML="<div class=\"today;\">" + jour + "</div>";
+                    // d[i].innerHTML="<div style=\"box-shadow: 0 0 7px 7px #0011ff83;\">" + jour + "</div>";
+                }else{d[i].innerHTML=jour;} 
+            }        
         }
         //mois suivant
+        //-------------
         if (jour> dj){
             contenu=jour-dj;
-            // d[i].innerHTML="<div style=\"color:gray\">" + contenu + "</div>";  
             d[i].innerHTML="<div class=\"autremois\">" + contenu + "</div>";  
         }
-    }
-    return true;
+
+    } return true;
 }
+let today = new Date(2021,1,11)
+ 
+let janvier = new Date(2021,0,11)
+ console.log('calendrier statut : '+calendrier(janvier));
+let février = new Date(2021,1,11)
+ console.log('calendrier statut : '+calendrier(février));
 
-// let today = new Date()
 
-let today = new Date(2021,11,10);
 
-console.log(calendrier(today));
-
+//  Pour obtenir la date en lettre en Fr
+// ********************************************
+ let datelocale = today.toLocaleDateString('fr-FR');
+ let datelocalelongue = today.toLocaleDateString('fr-FR',{
+     weekday:'long',
+     year : 'numeric',
+     month:'long',
+     day: 'numeric'
+ });
  

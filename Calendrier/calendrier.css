@@ -30,6 +30,41 @@ body{
     color:rgb(255, 255, 255);
     text-transform: capitalize;
 }
+.mois.janvier{
+    color:rgb(255, 255, 255);
+}
+.mois.février{
+    color:rgb(255, 255, 255);
+}
+.autremois{
+    color:#a4a6c5b0;
+}
+.ferie{
+    background-color: rgba(228, 15, 58, 0.507);
+    color:black;
+}
+.vacances{
+    background-color: rgba(204, 192, 218, 0.507);
+    color:black;
+}
+.today{
+    box-shadow: 0 0 7px 7px #0011ff83;
+}
+.Av{
+    box-shadow: 0 0 7px 7px #0011ff83;
+    background-color: rgba(204, 192, 218, 0.507);
+    color:black;
+}
+.Af{
+    box-shadow: 0 0 7px 7px #0011ff83;
+    background-color: rgba(228, 15, 58, 0.507);
+    color:black;
+}
+.An{
+    box-shadow: 0 0 7px 7px #0011ff83;
+}
+
+
 .jour-lettre{
     width:35px;
     margin: 1px;
@@ -39,7 +74,15 @@ body{
     background-color: honeydew;
     text-align: center;
 }
-.jour{
+.jour.janvier{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;   
+}
+.jour.février{
     margin: 1px;
     width:35px;
     font-size: medium;
@@ -47,7 +90,4 @@ body{
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
     
-}
-.autremois{
-    color:#a4a6c5b0;
 }
