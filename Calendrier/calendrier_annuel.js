@@ -161,7 +161,8 @@ function calendrier(today){
         if(jour==today.getDate()&& memedate(aujourdhui,today)==true && jourferieannee[année][date.getMonth()].includes(jour)==true){
             return 'Af';
         }
-        if(jour==today.getDate()&& memedate(aujourdhui,today)==true &&vacances[année][date.getMonth()].includes(jour)==true){
+        if(memedate(aujourdhui,jour)==true &&vacances[année][date.getMonth()].includes(jour)==true){
+        // if(jour==today.getDate()&& memedate(aujourdhui,today)==true &&vacances[année][date.getMonth()].includes(jour)==true){
             return 'Av';
         }else{
             //AN aujourd'hui et normal
@@ -170,7 +171,7 @@ function calendrier(today){
 
 
     }
-    console.log('ETAT : '+ etat(today,2));
+    console.log('ETAT mois : '+texte_mois(today) +' '+ etat(today,2));
 
 
 
@@ -274,10 +275,31 @@ function calendrier(today){
 }
 
  
-let janvier = new Date(2021,0,11)
+let janvier = new Date(2021,0,1)
  console.log('calendrier statut : '+calendrier(janvier));
-let février = new Date(2021,1,11)
+let février = new Date(2021,1,1)
  console.log('calendrier statut : '+calendrier(février));
+let mars = new Date(2021,2,1)
+ console.log('calendrier statut : '+calendrier(mars));
+
+let avril = new Date(2021,3,1)
+ console.log('calendrier statut : '+calendrier(avril));
+let mai = new Date(2021,4,1)
+ console.log('calendrier statut : '+calendrier(mai));
+let juin = new Date(2021,5,1)
+ console.log('calendrier statut : '+calendrier(juin));
+let juillet = new Date(2021,6,1)
+ console.log('calendrier statut : '+calendrier(juillet));
+let août = new Date(2021,7,1)
+ console.log('calendrier statut : '+calendrier(août));
+let septembre = new Date(2021,8,1)
+ console.log('calendrier statut : '+calendrier(septembre));
+let octobre = new Date(2021,9,1)
+ console.log('calendrier statut : '+calendrier(octobre));
+let novembre = new Date(2021,10,1)
+ console.log('calendrier statut : '+calendrier(novembre));
+let décembre = new Date(2021,11,1)
+ console.log('calendrier statut : '+calendrier(décembre));
 
 
 

@@ -26,7 +26,7 @@ body{
     text-align: center;
     font-weight: bold;
     /* border:solid; */
-    background-color:rgb(201, 73, 179);
+    background-color:rgba(201, 73, 180, 0.678);
     color:rgb(255, 255, 255);
     text-transform: capitalize;
 }
@@ -35,6 +35,126 @@ body{
 }
 .mois.février{
     color:rgb(255, 255, 255);
+}
+.mois.mars{
+    color:rgb(255, 255, 255);
+}
+.jour.mars{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.avril{
+    color:rgb(255, 255, 255);
+}
+.jour.avril{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.mai{
+    color:rgb(255, 255, 255);
+}
+.jour.mai{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.juin{
+    color:rgb(255, 255, 255);
+}
+.jour.juin{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.juillet{
+    color:rgb(255, 255, 255);
+}
+.jour.juillet{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.août{
+    color:rgb(255, 255, 255);
+}
+.jour.août{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.septembre{
+    color:rgb(255, 255, 255);
+}
+.jour.septembre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.octobre{
+    color:rgb(255, 255, 255);
+}
+.jour.octobre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.novembre{
+    color:rgb(255, 255, 255);
+}
+.jour.novembre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.décembre{
+    color:rgb(255, 255, 255);
+}
+.jour.décembre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
 }
 .autremois{
     color:#a4a6c5b0;
