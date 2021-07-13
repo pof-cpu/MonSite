@@ -4,7 +4,9 @@
 body{
     font-family:'Trebuchet MS';
 }
-
+div {
+font-size: small;
+}
 .calendrier{
     margin-left: 10px;
     display: inline-flex;
@@ -30,6 +32,23 @@ body{
     color:rgb(255, 255, 255);
     text-transform: capitalize;
 }
+.jour.janvier{
+    margin: 1px;
+    width:35px;
+    /* font-size: medium; */
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;   
+}
+.jour.février{
+    margin: 1px;
+    width:35px;
+    /* font-size: medium; */
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
 .mois.janvier{
     color:rgb(255, 255, 255);
 }
@@ -42,7 +61,7 @@ body{
 .jour.mars{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -54,7 +73,7 @@ body{
 .jour.avril{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -66,7 +85,7 @@ body{
 .jour.mai{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -78,7 +97,7 @@ body{
 .jour.juin{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -90,7 +109,7 @@ body{
 .jour.juillet{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -102,7 +121,7 @@ body{
 .jour.août{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -114,7 +133,7 @@ body{
 .jour.septembre{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -138,7 +157,7 @@ body{
 .jour.novembre{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -150,7 +169,7 @@ body{
 .jour.décembre{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
@@ -188,26 +207,9 @@ body{
 .jour-lettre{
     width:35px;
     margin: 1px;
-    font-size: medium;
+    /* font-size: small; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     background-color: honeydew;
     text-align: center;
-}
-.jour.janvier{
-    margin: 1px;
-    width:35px;
-    font-size: medium;
-    /* border: #e0c3d6 solid 1px; */
-    /* outline: mediumvioletred solid 1px; */
-    text-align: center;   
-}
-.jour.février{
-    margin: 1px;
-    width:35px;
-    font-size: medium;
-    /* border: #e0c3d6 solid 1px; */
-    /* outline: mediumvioletred solid 1px; */
-    text-align: center;
-    
 }
