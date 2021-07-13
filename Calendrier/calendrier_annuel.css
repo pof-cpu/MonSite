@@ -145,7 +145,7 @@ font-size: small;
 .jour.octobre{
     margin: 1px;
     width:35px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     text-align: center;
