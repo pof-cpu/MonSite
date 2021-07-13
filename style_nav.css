@@ -17,18 +17,21 @@ nav{
     flex-wrap:wrap;
     font-family: 'Poppins', sans-serif;
     background-color:#5d4954 ;
+    border:blue;
+    justify-content: space-between;
 }
 
-h4.bar-nav{
+/* h4.bar-nav{
     margin:0;
     color: rgb(228, 228, 228);
     text-transform:uppercase;
     letter-spacing: 5px;
     font-size: large;
-}
+} */
 
 .burger{
     cursor: pointer;
+    border: solid;
 }
 .burger div{
     width: 20px;
@@ -39,34 +42,53 @@ h4.bar-nav{
     /* border:solid; */
 }
  .bandeau{
-     margin-left: 8px;;
+     /* margin-left: 8px;; */
+     display: flex;
+     border:red solid;
+     height: 30px;
+     /* width: 200px; */
+     margin:0;
+     color: rgb(228, 228, 228);
+     font-weight: bold;
+     text-transform:uppercase;
+     letter-spacing: 5px;
+     font-size: 1.2em;
+     text-align:right; /*Axe principal */
+     align-items: center; /*Axe secondaire */
+  
  }
 
  div.nav-link{
     display: flex;
-    flex-direction: column; 
-    margin-top:0;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    flex-direction: row; 
+    justify-content: flex-end;
+    border:green solid;
     background-color:#5d4954 ;
-   
-    /* transform: translateY(-100%); */
-    /* display: none; */
  }
+
  div.nav-link div{
      margin-left: 18px;
      margin-top: 10px;
  }
+ 
  div.nav-link a{
     color: rgb(230, 220, 220);
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    font-size: 25px;
  }
+ div.nav-items{
+     width:170px;
+     border:solid;
+     text-align: center;
+     /* opacity: 0%; */
+ }
+ 
 div.nav-active{
     transform:translateY(0%);
     transition-duration: .5s;
-    display: contents;
+    opacity: 100%;
 }
 
