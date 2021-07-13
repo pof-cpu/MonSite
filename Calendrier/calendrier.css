@@ -10,10 +10,18 @@ body{
     display: inline-flex;
     flex-wrap: wrap;
     width:264px;
-    border:rgb(129, 129, 216) solid 2px;
+    border:rgb(129, 129, 216) solid 1px;
     
     
     /* flex-direction: column; */
+}
+div{
+    font-size: small;
+}
+.jour{
+    width:35px;
+    margin:1px;
+    text-align: center;
 }
 
 .année{
@@ -26,9 +34,28 @@ body{
     text-align: center;
     font-weight: bold;
     /* border:solid; */
-    background-color:rgba(201, 73, 180, 0.678);
-    color:rgb(255, 255, 255);
+    /* background-color:rgba(201, 73, 180, 0.678); */
+    /* color:rgb(255, 255, 255); */
     text-transform: capitalize;
+}
+
+
+.jour.janvier{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;   
+}
+.jour.février{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
 }
 .mois.janvier{
     color:rgb(255, 255, 255);
@@ -188,26 +215,9 @@ body{
 .jour-lettre{
     width:35px;
     margin: 1px;
-    font-size: medium;
+    /* font-size: medium; */
     /* border: #e0c3d6 solid 1px; */
     /* outline: mediumvioletred solid 1px; */
     background-color: honeydew;
     text-align: center;
-}
-.jour.janvier{
-    margin: 1px;
-    width:35px;
-    font-size: medium;
-    /* border: #e0c3d6 solid 1px; */
-    /* outline: mediumvioletred solid 1px; */
-    text-align: center;   
-}
-.jour.février{
-    margin: 1px;
-    width:35px;
-    font-size: medium;
-    /* border: #e0c3d6 solid 1px; */
-    /* outline: mediumvioletred solid 1px; */
-    text-align: center;
-    
 }
