@@ -1,0 +1,224 @@
+/* *{margin:0; */
+/* padding: 0; */
+/* *{box-sizing: border-box;} */
+body{
+    font-family:'Trebuchet MS';
+    box-sizing: border-box;
+}
+
+.calendrier{
+    margin-left: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width:264px;
+    border:rgb(129, 129, 216) solid 1px;
+    
+    
+    /* flex-direction: column; */
+}
+div{
+    font-size: small;
+}
+.jour{
+    width:35px;
+    margin:1px;
+    text-align: center;
+}
+
+.année{
+    font-size: x-large;
+}
+.mois{
+    font-size: larger;
+    width:100%;
+    margin: 1px;
+    text-align: center;
+    font-weight: bold;
+    /* border:solid; */
+    /* background-color:rgba(201, 73, 180, 0.678); */
+    /* color:rgb(255, 255, 255); */
+    text-transform: capitalize;
+}
+
+
+.jour.janvier{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;   
+}
+.jour.février{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.janvier{
+    color:rgb(255, 255, 255);
+}
+.mois.février{
+    color:rgb(255, 255, 255);
+}
+.mois.mars{
+    color:rgb(255, 255, 255);
+}
+.jour.mars{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.avril{
+    color:rgb(255, 255, 255);
+}
+.jour.avril{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.mai{
+    color:rgb(255, 255, 255);
+}
+.jour.mai{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.juin{
+    color:rgb(255, 255, 255);
+}
+.jour.juin{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.juillet{
+    color:rgb(255, 255, 255);
+}
+.jour.juillet{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.août{
+    color:rgb(255, 255, 255);
+}
+.jour.août{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.septembre{
+    color:rgb(255, 255, 255);
+}
+.jour.septembre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.octobre{
+    color:rgb(255, 255, 255);
+}
+.jour.octobre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.novembre{
+    color:rgb(255, 255, 255);
+}
+.jour.novembre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.mois.décembre{
+    color:rgb(255, 255, 255);
+}
+.jour.décembre{
+    margin: 1px;
+    width:35px;
+    font-size: medium;
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    text-align: center;
+    
+}
+.autremois{
+    color:#a4a6c5b0;
+}
+.férie{
+    background-color: rgba(228, 15, 58, 0.507);
+    color:black;
+}
+.vacances{
+    background-color: rgba(204, 192, 218, 0.507);
+    color:black;
+}
+.today{
+    box-shadow: 0 0 7px 7px #0011ff83;
+}
+.Av{
+    box-shadow: 0 0 7px 7px #0011ff83;
+    background-color: rgba(204, 192, 218, 0.507);
+    color:black;
+}
+.Af{
+    box-shadow: 0 0 7px 7px #0011ff83;
+    background-color: rgba(228, 15, 58, 0.507);
+    color:black;
+}
+.An{
+    box-shadow: 0 0 7px 7px #0011ff83;
+}
+
+
+.jour-lettre{
+    width:35px;
+    margin: 1px;
+    /* font-size: medium; */
+    /* border: #e0c3d6 solid 1px; */
+    /* outline: mediumvioletred solid 1px; */
+    background-color: honeydew;
+    text-align: center;
+}

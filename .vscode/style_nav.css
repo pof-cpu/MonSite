@@ -65,13 +65,12 @@ nav{
     border:green solid;
     background-color:#5d4954 ;
     align-items: center; /*Axe secondaire */
- }
- div.nav-link.not-visible{
-     display: none;
-     
+
  }
 
-  
+ div.nav-link div{
+
+}
  
  div.nav-link a{
     color: rgb(230, 220, 220);
@@ -85,7 +84,12 @@ nav{
      width:170px;
      border:solid;
      text-align: center;
-     
+     opacity: 0%;
  }
  
+div.nav-active{
+    transform:translateY(0%);
+    transition-duration: .5s;
+    opacity: 100%;
+}
 
