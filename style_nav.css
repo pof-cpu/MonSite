@@ -85,12 +85,19 @@ nav{
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     font-size: .8em;
-
  }
+ div.nav-items:hover{
+        background-color:#7c6672 ;
+        border:#aaa6a8 solid .1em;
+        border-radius: .3em; 
+    }
+
+
  div.nav-items{
      width:170px;
      border:solid;
      text-align: center;
+
      
  }
  
