@@ -1,0 +1,121 @@
+/* 09/07/2021 */
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    
+}
+.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+     
+    }}
+
+
+nav{
+    margin:0;
+
+}
+
+.nav-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    font-family: 'Poppins', sans-serif;
+    background-color:#5d4954 ;
+    border:blue;
+    justify-content: space-between;
+    overflow: auto;
+     
+}
+
+/* h4.bar-nav{
+    margin:0;
+    color: rgb(228, 228, 228);
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    font-size: large;
+} */
+
+.burger{
+    cursor: pointer;
+    border: solid;
+}
+.burger div{
+    width: 20px;
+    height: 3px;
+    background-color:rgb(230, 220, 220);
+    margin:4px;
+  
+    
+    /* border:solid; */
+}
+ .bandeau{
+     /* margin-left: 8px;; */
+     display: flex;
+     border:red solid;
+     height: 30px;
+     /* width: 200px; */
+     margin:0;
+     color: rgb(228, 228, 228);
+     font-weight: bold;
+     text-transform:uppercase;
+     letter-spacing: .2em;
+     font-size: 1.2em;
+     text-align:right; /*Axe principal */
+     align-items: center; /*Axe secondaire */
+  
+ }
+
+ div.nav-link{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    border:green solid;
+    background-color:#5d4954 ;
+    align-items: center; /*Axe secondaire */
+    opacity: 100;
+    visibility:visible;
+    transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+
+ }
+ div.nav-link.not-visible{
+     opacity: 0;
+     visibility: hidden;
+     transition: opacity .8s ease-in-out, visibility .5s ease-in-out;
+     
+ }
+
+  
+ 
+ div.nav-link a.items{
+    color: rgb(230, 220, 220);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: .8em;
+ }
+ div.nav-items:hover{
+        background-color:#7c6672 ;
+        border:#aaa6a8 solid .1em;
+        border-radius: .3em; 
+    }
+    
+
+
+ div.nav-items{
+     width:170px;
+     border:solid;
+     text-align: center;
+
+     
+ }
+ 
+

@@ -1,0 +1,9 @@
+#page {
+	min-height:98vh; /* 1 */
+	display:flex; /* 2 */
+	flex-direction:column; /* 3 */
+}
+
+#content {
+	flex-grow:1; /* 4 */
+}

@@ -6,6 +6,12 @@
     cursor: pointer;
 
 }
+.sticky{
+    border:solid;
+    position: sticky;
+    top:0;
+    background-color: white;
+}
 
 
 .jour.janvier{
