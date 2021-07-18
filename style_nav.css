@@ -15,10 +15,21 @@
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  /* width: 100%; */
+  font-size: large; 
+
+  text-align:right; /*Axe principal */
+  align-items: center; /*Axe secondaire */
+ 
+}
+.logo{
+ /* letter-spacing: .8em; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size:x-large;
+}
+.item{
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  font-size: large;
-  letter-spacing: .2em;
 }
 
 .content {
