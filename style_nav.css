@@ -1,16 +1,24 @@
 
 *{margin:0;}
 
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
 
-.header {
+
+#myHeader.header {
   padding: 10px 16px;
-  background: #555;
+  /* background: #555; */
   color: #f1f1f1;
+  display:flex;
+  top:0px;
+  position: sticky;
+  
+  background-color:#7c6672 ;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 100%; */
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: .2em;
 }
 
 .content {
@@ -23,5 +31,5 @@
   width: 100%;
 }
 
-.sticky + .content {
-  padding-top: 102px;
+/* .sticky + .content {
+  padding-top: 102px; */
