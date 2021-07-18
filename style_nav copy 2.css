@@ -1,0 +1,35 @@
+
+*{margin:0;}
+#page {
+    position: sticky;
+    top:0px;
+    margin-left: auto;
+    margin-right: auto;
+    width:21cm;
+}
+
+#header.nav{
+    position: sticky;
+    top:0px;
+    background-color:#7c6672 ;
+    display :flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+
+
+}
+.item{
+    display: flex;
+    height: 30px;
+    margin:0;
+    color: rgb(228, 228, 228);
+    font-weight: bold;
+    text-transform:uppercase;
+    letter-spacing: .2em;
+    font-size: 1.2em;
+    text-align:right; /*Axe principal */
+    align-items: center; /*Axe secondaire */
+}
