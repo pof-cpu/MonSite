@@ -3,8 +3,9 @@
 
 
 
+
 #myHeader.header {
-  padding: 10px 16px;
+  /* padding: 10px 16px; */
   /* background: #555; */
   color: #f1f1f1;
   display:flex;
@@ -19,21 +20,45 @@
 
   text-align:right; /*Axe principal */
   align-items: center; /*Axe secondaire */
+  box-shadow:0px 5px 5px gray;
+  border:sienna solid;
+  padding-left: 1em;
+  padding-right: 1em;
  
 }
 .logo{
  /* letter-spacing: .8em; */
+    display:flex;
+    flex-direction: row;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    font-size:x-large;
+    color:black;
+    font-size:large;
+    text-align: start;
+    text-shadow:2px 0 gray;
+    border:green solid;
+    /* padding-left:1em; */
+}
+.logo-item{
+  margin-right: 1em;
+}
+.navbar{
+  border:blue solid;
+  display:flex;
+  justify-content: space-between;
+  flex-grow: 2;
+
+  
 }
 .item{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  margin: 0 .5em 0 0.5em;
 }
 
 .content {
-  padding: 16px;
+  padding: 1em;
+  border:tomato solid;
 }
 
 .sticky {
@@ -44,3 +69,23 @@
 
 /* .sticky + .content {
   padding-top: 102px; */
+
+  @media screen and (min-width: 810px) {
+    body{
+      margin-left: auto;
+      margin-right: auto;
+      width:810px;
+      /* texte justifié */
+      /* ----------------- */
+      text-align: justify;
+      text-justify: inter-word;
+      /* ----------------- */
+    }
+    .logo{
+      display : flex;
+      flex-direction: column;
+    color:black;
+  
+  
+    }
+  }
