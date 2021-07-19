@@ -29,6 +29,12 @@ item2.onclick=function(){
 item3.onclick=function(){
   window.open("javascript.html");
 };
+item4.onclick=function(){
+  window.open("../test/Menu déroulant/test_menu_deroulant.html");
+};
+item5.onclick=function(){
+  window.open("../test/Menu déroulant2/menu_deroulant2.html");
+};
 // item2.addEventListener('mouseover',()=>{
-//     item2.classList.toggle('survole');
+//     item2.classList.toggle('survol');
 // });

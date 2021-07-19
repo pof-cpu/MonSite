@@ -1,0 +1,105 @@
+
+*{
+    margin:0;
+}
+nav{
+    /* width:100%; */
+
+    /* margin:0 auto; */
+    background-color: white;
+    position: sticky;
+    top:0px;
+    border:solid;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+/* ---------------------- */
+    display:flex;
+
+  
+  /* background-color:#7c6672 ; */
+  justify-content:left;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  font-size: larger; 
+
+  text-align:left; /*Axe principal */
+ align-items: center;/* Axe secondaire*/
+  /* box-shadow:0px 5px 5px gray; */
+  /* border:sienna solid; */
+  padding-left: 1em;
+  padding-right: 1em;
+
+
+
+}
+
+nav ul.navbar{
+    list-style:none;
+    display:flex;
+    /* flex-grow: 1; */
+    justify-content:left;
+    border:rebeccapurple solid;
+    margin-left: 1em;
+    margin-top: 0;
+    padding: 0;
+}
+nav ul li{
+    float: left;
+    /* width: 25%; */
+    text-align: center;
+    position : relative;
+    border:red solid;
+}
+nav ul li.deroulant{
+    margin-right: 1em;
+    /* margin-left: 1em; */
+    /* padding-left: 1em; */
+}
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 1em 0;
+}
+
+nav a:hover{
+    color:orange;
+    border-bottom: 2px solid gold;
+}
+.sous{
+    display: block;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position:absolute;
+    /* width: 100%; */
+    /* z-index: 1000; */
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+
+.sous li{
+    float: none;
+    /* width:100%; */
+    text-align: left;
+    font-size: .8em;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: rgba(200, 200,200, .1);
+}
+/* .deroulant > a:after{
+    content:" ▼";
+    font-size: 12px;
+} */
