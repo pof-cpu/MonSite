@@ -33,7 +33,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     color:black;
-    font-size:large;
+    /* font-size:larger; */
     text-align: start;
     text-shadow:2px 0 gray;
     border:green solid;
@@ -53,7 +53,9 @@
 .item{
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  margin: 0 .5em 0 0.5em;
+  padding: 0 .5em 0 0.5em;
+  border:chartreuse solid;
+  cursor: pointer;
 }
 
 .content {

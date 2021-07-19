@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="../prism-default.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../prism.js"></script>
+    <script type="text/javascript">
+        // Optional
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true,
+            'tabs-to-spaces': 1,
+            'spaces-to-tabs': 4,
+            'indent': 0,
+        });
+        </script>
+
+
+    <title>Javascript</title>
+</head>
+<body>
+    
+  <h1 class="titre">JavaScript</h1>
+    <div>
+      <p>Ouvrir une page HTML :
+        <pre>
+          <code>
+            location.href="meteo.html";
+          </code>
+        </pre>
+      </p>
+      <p>Ouvrir une page dans un nouvel onglet : 
+        <pre>
+          <code>
+            window.open("index.html");
+          </code>
+        </pre>
+      </p>
+      <p>
+        Ajouter une fonction qui s'active lors d'un click sur l'objet
+        <pre>    
+          objet.addEventListener('click',()=>{
+          console.log('ok');
+        </pre>
+        <code></code>
+      </p>
+      <p>
+        <code>filename.name</code> : Returns the name of the file represented by a File object. For security reasons, the path is excluded from this property.
+      </p>
+      <p>
+        Ajouter/retirer une class lors d'un défilement.
+      </p>    
+      <pre>
+        <code class="language-javascript">
+            window.onscroll = function() {fonction_sticky()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function fonction_sticky() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+        </code>
+      </pre>
+ 
+      </div>
+ 
+
+  </body>
+</html>
