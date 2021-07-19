@@ -40,6 +40,7 @@
             location.href="meteo.html";
           </code>
         </pre>
+        <hr>
       </li>
       <li>Ouvrir une page dans un nouvel onglet : 
         <pre class="language-javascript">
@@ -47,6 +48,8 @@
             window.open("index.html");
           </code>
         </pre>
+        <hr>
+
       </li>
       <li>
         Ajouter une fonction qui s'active lors d'un click sur l'objet
@@ -56,17 +59,18 @@
             console.log('ok');
           </code> 
         </pre>
+        <hr>
       </li>
       <li>
         <code class="language-javascript">filename.name</code> : Returns the name of the file represented by a File object. For security reasons, the path is excluded from this property.
+        <hr>
       </li>
       <li>
         Ajouter/retirer une class lors d'un défilement.
-      </li>    
-      <pre>
-        <code class="language-javascript">
+        <pre>
+          <code class="language-javascript">
             window.onscroll = function() {fonction_sticky()};
-
+            
             var header = document.getElementById("myHeader");
             var sticky = header.offsetTop;
             
@@ -77,9 +81,11 @@
                 header.classList.remove("sticky");
               }
             }
-        </code>
-      </pre>
- 
+          </code>
+        </pre>
+        <hr>
+      </li>    
+        
       </ul>
  
 
