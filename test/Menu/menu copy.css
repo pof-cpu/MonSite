@@ -1,0 +1,75 @@
+*{padding:0;
+ margin: 0;}
+html{padding:0 5px 0 5px;}
+
+@media screen and (min-width: 500px) {
+    header{
+        font-family: 'Poppins', sans-serif;
+        top: 0;
+        position: sticky;
+        background-color: white;
+    }   
+
+    ul.bar{
+        border:black solid;
+        list-style: none;
+        padding: 0;
+        display: flex;
+       transition: transform 1s;
+    }
+    .item{
+        border:red solid 1px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        font-family: 'Poppins', sans-serif;
+        position: sticky;
+        top:0;
+        background-color: white;
+    }
+    .logo{
+        display : none;
+    }   
+
+    ul.bar{
+        border:rgb(1, 141, 255) solid 1px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        top:0;
+
+    }
+    .item{
+        border:green solid 1px;
+        
+    }
+    div.myBurger{
+        cursor: pointer ;
+        /* border:blueviolet solid 1px; */
+        margin-left: auto;
+    }
+    div.burger{
+        width: 30px;
+        height: 5px;
+        background-color: rgb(88, 88, 88);
+        margin: 6px 0;
+       
+
+    }
+ /* #myBar {
+     transform: translateY(-3cm);
+ } */
+
+    div.navbar{
+        display: flex;
+        flex-direction: row;
+        border: orange solid 1px;
+        padding: 0em;
+        margin: 0em;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
