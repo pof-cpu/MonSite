@@ -11,14 +11,16 @@ let myVar=false;
 
 burger.addEventListener('click',()=>{
     if(myVar == false){
-    bar.style.transform='translateY(0cm)';
     bar.style.height="100%";
+
+    bar.style.transform='translateY(0cm)';
     bar.style.transition="1s";
     console.log('ok') ;
     myVar=true;
     }else{
-        bar.style.transform='translateY(-3cm)';
         bar.style.height="0em";
+        bar.style.transform='translateY(-3cm)';
+        bar.style.transition="1s";
         myVar=false;
     }
 

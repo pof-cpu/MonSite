@@ -58,6 +58,7 @@ html{padding:0 5px 0 5px;}
     .logo > .logo-item{
         margin-right: 1em;
         flex-grow: 1;
+
     }
     .logo > #myBuger{
         margin-right: 1em;
@@ -83,13 +84,16 @@ html{padding:0 5px 0 5px;}
         margin: 6px 0;
     }
     ul.bar{
-        /* background-color: white; */
-        border:greenyellow solid 1px;     
+        background-color: white;
+        border:greenyellow solid 1px;  
+        z-index: -1;
+
         /* height:0em; */
     }
     #myBar.bar{
         width: 100%;
-        transform: translateY(0cm);
+        transition: opacity seconds;
+        /* transform: translateY(0cm); */
     }
    ul.bar a{
     text-decoration: none;
