@@ -1,0 +1,102 @@
+*{padding:0;
+ margin: 0;}
+html{padding:0 5px 0 5px;}
+
+@media screen and (min-width: 500px) {
+    header{
+        font-family: 'Poppins', sans-serif;
+        top: 0;
+        position: sticky;
+        background-color: white;
+    }   
+    .logo{
+        display : flex;
+        flex-direction: column;
+        border: cadetblue solid 1px;
+    }  
+
+    ul.bar{
+        display: flex;
+        border:blue solid 2px;
+        list-style: none;
+        padding: 0;
+    }
+    .item{
+        border:red solid 1px;
+    }
+    .bar a{
+        text-decoration: none;
+        color: black;
+        margin-right: 1em;
+        }
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        font-family: 'Poppins', sans-serif;
+        position: sticky;
+        top:0;
+        background-color: white;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        align-items: center;
+        height: 2em;
+        border: royalblue solid 1px;
+        justify-content: space-between;
+        background-color: white;
+
+    }
+    #logo-item1{
+        border:saddlebrown solid 1px;
+    }
+    #logo-item2{
+        border:forestgreen solid 1px;
+    }
+    .logo > .logo-item{
+        margin-right: 1em;
+        flex-grow: 1;
+
+    }
+    .logo > #myBuger{
+        margin-right: 1em;
+        flex-grow: 2;
+    }
+
+    .myBurger{
+        border:yellowgreen solid 1px;
+    }
+    .navbar{
+        display: flex;
+
+    }
+    /* div.myBurger{
+        cursor: pointer ;
+        border:yellowgreen solid 1px;
+    } */
+    
+    div.burger{
+        width: 30px;
+        height: 5px;
+        background-color: rgb(88, 88, 88);
+        margin: 6px 0;
+    }
+    ul.bar{
+        background-color: white;
+        border:greenyellow solid 1px;  
+        z-index: -1;
+
+        /* height:0em; */
+    }
+    #myBar.bar{
+        width: 100%;
+        transition: opacity seconds;
+        /* transform: translateY(0cm); */
+    }
+   ul.bar a{
+    text-decoration: none;
+    color: black;
+    }
+}
