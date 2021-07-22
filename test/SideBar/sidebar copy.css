@@ -58,18 +58,17 @@ body{
     font-weight: bold;
 }
 
-
 .sidebar #btn{
     position:absolute;
+    left:90%;
     top:6px;
     font-size: 30px;
     height: 50px;
-    width: 0.9em;
-    left:55%;
+    width: 50px;
+    left:50%;
     text-align: center;
     line-height: 50px;
     transform : translateX(-50%);
-
 }
 
 .sidebar.active #btn{
@@ -105,8 +104,8 @@ body{
     background-color: cadetblue;
 }
 
-.sidebar ul li a .icone{
-    height: 1.5em;
+.sidebar ul li a i{
+    height: 50px;
     min-width: 50px;
     line-height: 50px;
     text-align: center;
