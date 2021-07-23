@@ -1,0 +1,139 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.parent2{
+    background-color: lightgreen;
+    height: 120vh;
+}
+@media screen and (max-width: 501px){
+
+    .parent{
+        background-color: rgb(237, 143, 100);
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        float: left;
+        top:0px;
+        /* left:0px; */
+        width:140px;
+    }
+    .child1{
+        background-color: lightslategray;
+    }
+    .child2{
+        background-color: rgb(123, 124, 28);
+    }
+
+    
+    .child3{
+        background-color: rgb(14, 101, 187);
+    }
+
+    .child3 ul{ 
+        display:flex;
+        flex-direction: column;
+        border:mediumpurple solid 1px;
+        margin: 5px;
+        padding:0;
+        
+    }
+    .child3 ul li{
+        display: inline-flex;
+        color:magenta;
+        list-style: none;
+        height: 150px;
+        border: rgb(19, 202, 126) solid 1px;
+        
+    }
+    .child3 ul li a{
+        text-decoration: none;
+        color:magenta;
+        border: navy solid 1px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+    .child3 ul li img{
+ 
+        border:orange solid 1px;
+        top:0;
+    }
+
+    img {width: 20px;}
+}
+
+@media screen and (min-width: 500px){
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    background-color: cornflowerblue;
+    display: inline-flex;
+    position: sticky;
+    top:0px;
+    left:50px;
+    height: 150px;
+}
+.child1{
+    background-color: firebrick;
+    display: inline-block;
+
+}
+
+.child1 ul{
+    color:khaki;
+}
+.child1 ul li{
+    color:lawngreen;
+    display: inline-block;
+}
+
+.child2{
+    background-color: goldenrod;
+    display: inline-flex;
+    
+    top:0px;
+    width: 80px;
+    height: 60px;
+    justify-content: center;
+    align-items:flex-end;
+    margin-top:auto ;
+}
+.child3{
+    background-color: hotpink;
+    display: inline-block;
+    position: relative;
+    bottom:auto;
+    width: 200px;
+}
+
+
+.child3 ul{
+    border:rgb(193, 212, 18) solid 3px;
+}
+
+.child3 li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:black solid 1px;
+    height: 40px;
+    background-color: blanchedalmond;
+
+}
+.child3 li a{
+    text-decoration: none;
+    color: black;
+}
+.child3 li img{
+    height: 25px;
+    border:black solid 1px;
+}
+
+}

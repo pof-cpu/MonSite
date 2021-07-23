@@ -1,0 +1,61 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.burger{
+    height: 23px;
+    cursor: pointer;
+    margin: 5px;
+    
+
+}
+.burger-item{
+    width: 18px;
+    height: 3px;
+    background-color:rgb(233, 233, 233) ;
+    border:rgb(158, 158, 158) solid 1px;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+@media screen and (min-width:400px) {
+    /* laptop */
+    .parent2{
+        background-color: honeydew;
+    }
+    .logo img{
+        height: 40px;
+    }
+    .logo-text{
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .nav{
+        position: sticky;
+        top:0px;
+        display: flex;
+        flex-direction: row;
+        background-color:rgb(204, 204, 204) ;
+        align-items: flex-start;
+
+    }
+    .nav ul{
+        display:flex ;
+        flex-direction: row;
+        width: 350px;
+        justify-content: space-between;
+        margin-top: 6px;
+    }
+    
+    .nav ul li{
+    }
+    .nav div:nth-child(4){
+        border:green solid;
+        margin-left: auto;
+    } 
+  
+}
