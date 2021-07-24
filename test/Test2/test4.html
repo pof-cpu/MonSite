@@ -22,13 +22,13 @@
         </div>
         <div class="logo"> <img src="../Menu/icones/Logo.svg"> </div>
         <div class="logo-text">SPC Lab</div>
-        <div class="menu">
-            <ul>
-                <li class="item"> <a href="http://" target="_blank">Accueil</a> </li>
-                <li class="item"> <a href="http://" target="_blank">Chapitre</a> </li>
-                <li class="item"> <a href="http://" target="_blank">TP</a> </li>
-                <li class="item"> <a href="http://" target="_blank">Fiches</a> </li>
-                <li class="item"> <a href="http://" target="_blank">Python</a> </li>
+        <div>
+            <ul class="menu">
+                <li class="item"> <a href="http://" target="_blank"><img src="../Menu/icones/Accueil.svg">Accueil </a></li>
+                <li class="item"> <a href="http://" target="_blank"><img src="../Menu/icones/chapitres.svg">Chapitres</a> </li>
+                <li class="item"> <a href="http://" target="_blank"><img src="../Menu/icones/TP.svg">TP</a> </li>
+                <li class="item"> <a href="http://" target="_blank"><img src="../Menu/icones/fiches.svg">Fiches</a> </li>
+                <li class="item"> <a href="http://" target="_blank"><img src="../Menu/icones/python_clair.svg">Python</a> </li>
             </ul>
         </div>
     </div>
@@ -43,9 +43,12 @@
 
     <script>
         let btn =document.getElementById('btn')
-        let menu =document.querySelector(".menu");
+        let li =document.querySelector(".menu");
+        let nav=document.querySelector('.nav');
+        console.log(li);
         btn.onclick=function(){
-            menu.classList.toggle('active');
+            li.classList.toggle('active');
+            nav.classList.toggle('active');
 
         }
     </script>
