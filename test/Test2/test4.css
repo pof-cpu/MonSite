@@ -5,33 +5,58 @@
     box-sizing: border-box;
 }
 
-.burger{
-    height: 23px;
-    cursor: pointer;
-    margin: 5px;
-    margin-right: 10px;
-    
 
-}
-.burger-item{
-    width: 18px;
-    height: 4px;
-    background-color:rgb(233, 233, 233) ;
-    border:rgb(158, 158, 158) solid 1px;
-    border-radius: 3px;
-    margin-top: 2px;
-    margin-bottom: 2px;
-
-}
 
 @media screen and (max-width:810px) {
-/* smartphone */
-   body{
-       position: relative;
-   }
-   .nav{
-        font-family: 'poppins', Arial, Helvetica, sans-serif;
-        font-weight: normal;
+    /* smartphone */
+    body{
+        position: relative;
+    }
+    
+    .burger{
+        height: 23px;
+        cursor: pointer;
+        margin: 5px;
+        margin-right: 10px;
+        width:25px;
+        border:rgb(83, 83, 83) solid 1px;
+        padding:0 0px 0 0px ;        
+    }
+    .burger-item{
+        width: 18px;
+        height: 4px;
+        background-color:rgb(233, 233, 233) ;
+        /* border:rgb(158, 158, 158) solid 1px; */
+        border-radius: 3px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        transform: translateX(3px);
+        transition: all .5s ease;
+
+        
+    }
+    .nav.active .burger div:nth-child(3){
+        display: none;
+    }
+    .nav.active .burger div:nth-child(2){
+        transform: translate(3px,0px) rotate(45deg);
+        border: none;
+        transition: all .5s ease;
+
+    }
+    .nav.active .burger div:nth-child(1){
+        transform: translate(3px,6px) rotate(-45deg);
+        border: none;
+        transition: all .5s ease;
+
+    }
+    .nav.active .burger {
+        border:rgb(83, 83, 83) solid 1px;
+    }
+
+    .nav{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
         width:120px;
         position:fixed;
         top:0;
@@ -40,7 +65,7 @@
         /* padding:6px 14px;   */
         background: #bfbec5;
        transform: translateX(-90px);
-        /* transition: all .5s ease; */
+        /* transition: all .2s ease; */
    }
    .nav.active{
     transform: translateX(0px);
@@ -51,20 +76,27 @@
         display: none;
     }
     .logo-text{
-        display: none;
+        margin-left:5px;
+        text-shadow: 1px 1px rgb(143, 143, 143);
+
     }
+
     .burger{
         transform: translateX(90px);
     }
     .nav.active .burger{
         transform: translateX(0px);
-
     }
+    .nav.active .logo-text{
+        display: block;
+    }
+
     .nav ul{
         
         padding:5px 0 5px 5px;
         width: 120px;
         transform: translateX(-30px);
+        
     }
     .nav.active ul{
         transform: translateX(0px);
@@ -92,10 +124,12 @@
         height:20px;
         margin-right: 5px;
         top:0px;
-        transform: translate(95px,2px);
+        transform: translate(95px,-2px);
+
     }
     .menu.active img{
-        transform: translate(-25px,2px);
+        transform: translate(-25px,-2px);
+
     }
 
     .nav ul li a{
@@ -105,7 +139,7 @@
         left:25px;
     }
 
-    .parent2{
+    .container{
         position: absolute;
         height: 100%;
         width: calc(100%-190px);
@@ -114,7 +148,8 @@
         font-size: .96em;
         /* transition: all 0.5s ease; */
     }
-    .nav.active ~ .parent2{
+    
+    .nav.active ~ .container{
         width: calc(100%-240px);
         left:120px;
     }
@@ -122,18 +157,32 @@
 
 @media screen and (min-width:810px) {
     /* laptop */
-    .parent2{
-        margin:5px;
-        width: 21cm;
-        margin-left: auto;
-        margin-right: auto;
+    .burger{
+        height: 23px;
+        cursor: pointer;
+        margin: 5px;
+        margin-right: 10px;
+        display: none;
+        
+    
     }
+    .burger-item{
+        width: 18px;
+        height: 4px;
+        background-color:rgb(233, 233, 233) ;
+        border:rgb(158, 158, 158) solid 1px;
+        border-radius: 3px;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    
+    }
+   
     .logo{
         display: flex;
     }
     .logo img{
         height: 20px;
-        margin-right: 10px;;
+        margin: 0 10px 0 5px;
     }
     .logo-text{
         margin-top: 0px;
@@ -188,4 +237,18 @@
         margin-left: auto;
     } 
   
+    .container{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .left-content{
+        border:orchid solid 1px;
+    }
+    .main-content{
+      border:paleturquoise solid 1px;
+    }
+    .right-content{
+        border:orchid solid 1px;
+    }
 }
