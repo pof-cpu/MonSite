@@ -3,8 +3,26 @@
     margin:0;
     padding:0;
 }
+body{
+    margin:15px;
+    max-width: 21cm;
+}
+ul{
+    margin-left: 3em;
+}
 
-@media screen  and ( max-width: 600px) {
+.red{
+    color:red;
+}
+.blue{
+    color:rgb(0, 0, 216);
+}
+
+.gras{
+    font-weight: 900;
+}
+
+@media screen  and ( max-width: 500px) {
     
     body{
         margin:5px;
