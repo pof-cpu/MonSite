@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link rel="stylesheet" href="javascript.css"> -->
+
+    <link rel="stylesheet" media="screen" href="prism.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <script src="prism.js"></script>
+    <script type="text/javascript">
+        // Optional
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true,
+            'tabs-to-spaces': 0,
+            'spaces-to-tabs': 0,
+            'indent': 1,
+        });
+        </script>
+
+
+    <title>Javascript</title>
+</head>
+<body>
+    
+  <h1 class="titre">JavaScript</h1>
+    <ul>
+
+      <li>Screen.width : The Screen.width read-only property returns the width of the screen in pixels.<br>
+        <code class="language-javascript">
+          let lWidth = window.screen.width
+        </code>
+        <hr>
+      <li>Ouvrir une page HTML :
+        <code class="language-javascript">
+          location.href="meteo.html";
+        </code>
+        <hr>
+      </li>
+      <li>Ouvrir une page dans un nouvel onglet : 
+        <code class="language-javascript">
+          window.open("index.html");
+        </code>
+
+        <hr>
+
+      </li>
+      <li>
+        Ajouter une fonction qui s'active lors d'un click sur l'objet
+        <code class="language-javascript">  
+          objet.addEventListener('click',()=>{
+          console.log('ok');
+        </code> 
+       
+        <hr>
+      </li>
+      <li>
+        <code class="language-javascript">filename.name</code> : Returns the name of the file represented by a File object. For security reasons, the path is excluded from this property.
+        <hr>
+      </li>
+      <li>
+        Ajouter/retirer une class lors d'un défilement.
+        <pre>
+          <code class="language-javascript">
+            window.onscroll = function() {fonction_sticky()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function fonction_sticky() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+          </code>
+        </pre>
+        <hr>
+      </li>    
+        
+      </ul>
+ 
+
+  </body>
+</html>
