@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen" href="../prism-default.css" />
+    <link rel="stylesheet" href="style_content.css">
+    <link rel="stylesheet" media="screen" href="prism.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script src="../prism.js"></script>
+    <script src="prism.js"></script>
     <script type="text/javascript">
         // Optional
         Prism.plugins.NormalizeWhitespace.setDefaults({
@@ -38,25 +38,14 @@
             </div>
         </div>
         <div class="milieu">
-            <div class="en-tete">
-                <div class="en-tete-gauche">
-                    Lycée Taiarapu Nui<br>
-                    Terminale Générale<br>
-                </div>
-            <!-- <div class="en-tete-milieu">Article</div> -->
-            <div class="en-tete-droit">
-                Spécialité Physique - Chimie<br>
-                2021-2022
-            </div>
-
-            </div>
+           
             <h1 class="titre">Python</h1>
             
             <p class="normal">
-                <a href="https://www.python.org/" target='_blank' class=""><img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="" class="" style="width: 30%;"></a><br>
+                <a href="https://www.python.org/" target='_blank' class=""><img src="https://www.python.org/static/community_logos/python-logo-generic.svg" style="width:100px;"></a><br>
             </p>
             <h1>Module pandas</h1>
-            <a href="https://pandas.pydata.org/" target='_blank' class=""><img src="https://pandas.pydata.org/static/img/pandas.svg" alt="Logo pandas" style="width:30%"></a>
+            <a href="https://pandas.pydata.org/" target='_blank' class=""><img src="https://pandas.pydata.org/static/img/pandas.svg" alt="Logo pandas" style="width:100px"></a>
             
                 <p class="normal">
                     Toutes les méthodes sur les dataframes <a href="https://pandas.pydata.org/docs/reference/frame.html" target="_blanck">ici</a>.<br>
@@ -69,72 +58,63 @@
                             <li >
                                 Importation du package pandas.<br>
                                 
-                                    <pre class="cadre">
-                                        <code class="language-python">
-                                            import pandas as pd
-                                        </code>
-                                    </pre>
+                                <code class="language-python">
+                                    import pandas as pd
+                                </code>
                                 
                             </li>
                             <li>
                                 Ouvrir un fichier <span class="gras">csv</span> avec séparateur point-virgule.<br>
                                 <span class="italique">Pour plus d'info : </span><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html#" target="_blanck">lien</a> <br>
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                        data = pd.read_csv('fichier.csv', sep=';')
-                                    </code>
-                                </pre>
+                                <code class="language-python">
+                                    data = pd.read_csv('fichier.csv', sep=';')
+                                </code>
+
                             </li>
                             <li>
                                 Ouvrir un fichier <span class="gras">excel</span>. <br>
                                 <span class="italique">Pour plus d'info : </span><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html#" target="_blanck">lien</a> <br>
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                        data = pd.read_excel('fichier.xlsx', sep=';')
-                                    </code>
-                                </pre>
+                                <code class="language-python">
+                                    data = pd.read_excel('fichier.xlsx', sep=';')
+                                </code>
+
                             </li>
                             <li>
                                 Dimension du tableau. <br>
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                        data.shape
-                                    </code>
-                                </pre>
+                                <code class="language-python">
+                                    data.shape
+                                </code>
+
                             </li>
                             <li>
                                 Afficher la première ligne du tableau. <br>
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                        data.head  
-                                    </code>
-                                </pre>
+                                <code class="language-python">
+                                    data.head  
+                                </code>
+      
                             </li>
                             <li>
                                 Supprimer les colonnes  (<code class="language-python">axis = 1</code>) nommées <span class="italique">col1</span> et <span class="italique">col3</span>.<br>
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                        data.drop(['col1'],['col3'], axis = 1)
-                                    </code>
-                                </pre>
+                                <code class="language-python">
+                                    data.drop(['col1'],['col3'], axis = 1)
+                                </code>
+                 
                             </li>
                             <li>
                                 Supprimer les lignes où il manque des données.
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                        data = data.dropna(axis = 0)
-                                    </code>                                
-                                </pre>
+                                <code class="language-python">
+                                    data = data.dropna(axis = 0)
+                                </code>                                
+                        
                                 Supprime les lignes (<code>axis = 0</code>) contenant des <span class="italique">NaN</span>
                             </li>
                             <li>
                                 Return a Series containing counts of unique values in column named <span class="italique">col1</span>.
                                 <span class="italique">Pour plus d'info : </span><a href="https://pandas.pydata.org/docs/reference/api/pandas.Series.value_counts.html" target="_blanck">lien</a> <br>
-                                <pre class="cadre">
-                                    <code class="language-python">
-                                    data['col1']value_counts()
-                                    </code>
-                                </pre>
+                                <code class="language-python">
+                                data['col1']value_counts()
+                                </code>
+                            
                                 Equivalent method on DataFrames.
                             </li>
                         </ul>
